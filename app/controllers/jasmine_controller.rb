@@ -1,0 +1,2 @@
+class JasmineController < ApplicationController
+end

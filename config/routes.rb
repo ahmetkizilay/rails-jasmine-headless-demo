@@ -1,4 +1,8 @@
 CapybaraJasmineRails::Application.routes.draw do
+  if Rails.env.test? || Rails.env.development?
+    match 'jasmine-specs' => 'jasmine#index'
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
