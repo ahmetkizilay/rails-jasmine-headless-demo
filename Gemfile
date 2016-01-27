@@ -23,7 +23,8 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'capybara-webkit'
+  gem 'capybara'
+  gem 'selenium-webdriver', "~> 2.48.1"
 end
 
 # To use ActiveModel has_secure_password
